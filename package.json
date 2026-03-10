@@ -37,7 +37,8 @@
     "history",
     "mobile",
     "inapp-browser",
-    "typescript"
+    "typescript",
+    "use-inapp-back"
   ],
   "author": "rami0617",
   "license": "MIT",
