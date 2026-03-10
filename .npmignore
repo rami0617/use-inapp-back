@@ -1,0 +1,29 @@
+# Development files
+demo/
+src/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Config files
+tsconfig.json
+tsup.config.ts
+jest.config.js
+
+# Git files
+.git
+.gitignore
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# Node
+node_modules
+
+# Build artifacts not for distribution
+.DS_Store
+*.log
