@@ -1,1 +1,1 @@
-console.log('Happy developing ✨')
+export { useOverlayBack, type UseOverlayBackProps } from './useOverlayBack';
