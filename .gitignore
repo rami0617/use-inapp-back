@@ -11,3 +11,10 @@ yarn-error.log*
 .vscode/*
 .DS_Store
 .idea
+
+# Build output
+/dist
+*.tsbuildinfo
+
+# NPM package files
+*.tgz

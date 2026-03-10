@@ -1,14 +1,69 @@
 {
   "name": "use-inapp-back",
-  "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "tsc"
+  "version": "0.1.0",
+  "description": "React hook for managing browser history in overlays (modals, bottom sheets) to enable back button closing in mobile in-app browsers",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
   },
-  "dependencies": {},
+  "files": [
+    "dist",
+    "template",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "prepublishOnly": "npm run type-check && npm run test && npm run build",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "overlay",
+    "modal",
+    "bottom-sheet",
+    "back-button",
+    "history",
+    "mobile",
+    "inapp-browser",
+    "typescript"
+  ],
+  "author": "rami0617",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rami0617/use-inapp-back.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rami0617/use-inapp-back/issues"
+  },
+  "homepage": "https://github.com/rami0617/use-inapp-back#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/jest": "^30.0.0",
+    "@types/react": "^19.2.14",
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "ts-jest": "^29.4.6",
+    "tsup": "^8.5.1",
     "typescript": "^5.5.3"
   },
-  "private": true
+  "sideEffects": false
 }
