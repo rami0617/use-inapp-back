@@ -1,6 +1,6 @@
 {
   "name": "use-inapp-back",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "React hook for managing browser history in overlays (modals, bottom sheets) to enable back button closing in mobile in-app browsers",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
