@@ -8,6 +8,9 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required for pushing tags
+      packages: write  # Required for publishing packages
 
     steps:
       - name: Checkout code
